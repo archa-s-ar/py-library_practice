@@ -1,0 +1,1 @@
+Pandas is a powerful data manipulation library that provides data structures like Series and DataFrames to work with structured data. It is especially useful for handling tabular data.
