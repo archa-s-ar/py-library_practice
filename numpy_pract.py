@@ -131,7 +131,7 @@ print(f"Slice from index 2 onwards: {slice_2d}")
 
 # Create a 2D array
 arr_2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-arr_2d
+print(f"2D Array:\n{arr_2d}")
 
 # Slice the first two rows and all columns
 slice_2d = arr_2d[:2, :]
@@ -149,8 +149,12 @@ arr = np.array([10, 20, 30, 40, 50])
 condition = arr > 25
 print(f"Boolean condition: {condition}")
 
+# Select elements less than the mean
+less_than_mean = arr[arr < np.mean(arr)] # This will return a new array containing only the elements that are less than the mean of the original array. Change to median if you want to select elements less than the median.
+print(f"Elements less than the mean: {less_than_mean}")
+
 # Use the condition to filter the array
-filtered_arr = arr[condition]
+filtered_arr = arr[condition] # This will return a new array containing only the elements that satisfy the condition (greater than 25).
 print(f"Filtered array (elements > 25): {filtered_arr}")
 
 #Iterating over arrays
@@ -187,6 +191,7 @@ print(f"Modified array: {arr}")
 # Modify multiple elements using slicing
 arr[2:4] = [35, 45]
 print(f"Modified array with slicing: {arr}")
+arr[2:4]= [35] # This will set the elements at index 2 and 3 to 35, which is not what we want. We need to provide a list of values that matches the number of elements we want to modify.
 
 #Working with Geospatial Coordinates
 # Array of latitudes and longitudes
