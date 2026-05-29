@@ -1,5 +1,4 @@
-# py-library_practice
-numpy, geopandas, pandas, matplotlib for geo analysis
+# NumPy
 
 NumPy (Numerical Python) is a library used for scientific computing. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays.
 
