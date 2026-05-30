@@ -27,7 +27,7 @@ import pandas as pd
 
 ```
 Note: 
-here, np denotes NumPy
+here, np denotes NumPy.  
 plt denotes matplotlib
 
 
